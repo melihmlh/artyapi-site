@@ -106,11 +106,14 @@ section{padding:100px 0}
 .chips span{border:1px solid rgba(200,161,101,.6);padding:9px 20px;border-radius:30px;font-size:.95rem;transition:.3s}
 .chips span:hover{background:var(--gold);color:#111}
 
-.partners{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:960px;margin:0 auto}
-.partner{background:#fff;border-radius:14px;padding:34px 24px;text-align:center;box-shadow:0 8px 30px rgba(0,0,0,.05);transition:.35s;border-bottom:3px solid transparent}
-.partner:hover{transform:translateY(-6px);border-bottom-color:var(--gold)}
-.partner b{display:block;font-family:"Playfair Display",serif;font-size:1.3rem;margin-bottom:6px}
-.partner span{color:var(--muted);font-size:.9rem}
+.partners-sec{background:linear-gradient(135deg,#14161a,#22252c);color:#fff}
+.partners-sec .head p{color:#aaa}
+.partners{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1000px;margin:0 auto}
+.partner{background:rgba(255,255,255,.04);border:1px solid rgba(200,161,101,.25);border-radius:16px;padding:38px 24px 32px;text-align:center;transition:.4s}
+.partner:hover{transform:translateY(-8px);border-color:var(--gold);background:rgba(200,161,101,.08)}
+.mark{width:96px;height:96px;margin:0 auto 20px;display:block}
+.partner b{display:block;font-family:"Playfair Display",serif;font-size:1.3rem;letter-spacing:.02em;margin-bottom:4px}
+.partner span{color:var(--gold);font-size:.78rem;letter-spacing:.22em;text-transform:uppercase}
 @media(max-width:800px){.partners{grid-template-columns:1fr}}
 /* faq */
 .faq{max-width:820px;margin:0 auto}
@@ -281,7 +284,7 @@ footer{background:#0e0f12;color:#888;text-align:center;padding:28px 20px;font-si
  </div>
 </section>
 
-<section id="cozum-ortaklari">
+<section class="partners-sec" id="cozum-ortaklari">
  <div class="wrap">
   <div class="head rv">
    <div class="eyebrow">Çözüm Ortaklarımız</div>
@@ -289,9 +292,9 @@ footer{background:#0e0f12;color:#888;text-align:center;padding:28px 20px;font-si
    <p>Mimari proje, mühendislik ve inşaat alanındaki çözüm ortaklarımızla büyük ölçekli konut ve kurumsal projelerde de yanınızdayız.</p>
   </div>
   <div class="partners">
-   <div class="partner rv"><b>Serdem Mühendislik</b><span>Mühendislik</span></div>
-   <div class="partner rv d1"><b>Kurbal İnşaat</b><span>İnşaat</span></div>
-   <div class="partner rv d2"><b>ABM Tasarım Yapı İnşaat</b><span>Tasarım & Yapı</span></div>
+   <div class="partner rv"><svg class="mark" viewBox="0 0 100 100"><defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e2c38f"/><stop offset="1" stop-color="#a77d3f"/></linearGradient></defs><polygon points="50,4 90,27 90,73 50,96 10,73 10,27" fill="none" stroke="url(#g1)" stroke-width="3"/><polygon points="50,14 81,32 81,68 50,86 19,68 19,32" fill="rgba(200,161,101,.12)"/><text x="50" y="60" text-anchor="middle" font-family="Playfair Display,serif" font-size="30" font-weight="700" fill="url(#g1)">SM</text></svg><b>Serdem Mühendislik</b><span>Mühendislik</span></div>
+   <div class="partner rv d1"><svg class="mark" viewBox="0 0 100 100"><defs><linearGradient id="g2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e2c38f"/><stop offset="1" stop-color="#a77d3f"/></linearGradient></defs><rect x="8" y="8" width="84" height="84" rx="14" fill="rgba(200,161,101,.12)" stroke="url(#g2)" stroke-width="3"/><path d="M22 42 L50 20 L78 42" fill="none" stroke="url(#g2)" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/><text x="50" y="74" text-anchor="middle" font-family="Playfair Display,serif" font-size="28" font-weight="700" fill="url(#g2)">KB</text></svg><b>KurtBal İnşaat</b><span>İnşaat</span></div>
+   <div class="partner rv d2"><svg class="mark" viewBox="0 0 100 100"><defs><linearGradient id="g3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e2c38f"/><stop offset="1" stop-color="#a77d3f"/></linearGradient></defs><circle cx="50" cy="50" r="44" fill="rgba(200,161,101,.12)" stroke="url(#g3)" stroke-width="3"/><circle cx="50" cy="50" r="36" fill="none" stroke="url(#g3)" stroke-width="1" stroke-dasharray="3 4"/><text x="50" y="60" text-anchor="middle" font-family="Playfair Display,serif" font-size="27" font-weight="700" fill="url(#g3)">ABM</text></svg><b>ABM Tasarım Yapı İnşaat</b><span>Tasarım & Yapı</span></div>
   </div>
  </div>
 </section>
