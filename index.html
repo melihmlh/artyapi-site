@@ -83,6 +83,14 @@ section{padding:100px 0}
 .ba .t1{left:18px}.ba .t2{right:18px;background:var(--gold);color:#111}
 .note{text-align:center;color:#888;font-size:.8rem;margin-top:16px}
 
+.ba2{display:grid;grid-template-columns:1fr auto 1fr;gap:22px;align-items:center;max-width:1100px;margin:0 auto}
+.ba2 .bimg{position:relative;aspect-ratio:4/3;border-radius:14px;background-image:url(https://images.unsplash.com/photo-1753977725475-41b221add2c0?w=1400&q=75);background-size:100% 200%;box-shadow:0 20px 50px rgba(0,0,0,.5);overflow:hidden;transition:transform .5s}
+.ba2 .bimg:hover{transform:scale(1.03)}
+.ba2 .arrow{font-size:2.2rem;color:var(--gold);animation:nudge 1.6s ease-in-out infinite}
+@keyframes nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(8px)}}
+.ba2 .tag{position:absolute;top:16px;padding:6px 14px;background:rgba(0,0,0,.65);border-radius:20px;font-size:.8rem;letter-spacing:.1em;left:16px;color:#fff}
+.ba2 .t2{background:var(--gold);color:#111}
+@media(max-width:800px){.ba2{grid-template-columns:1fr}.ba2 .arrow{transform:rotate(90deg);text-align:center;animation:none}}
 /* process */
 .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px;counter-reset:s}
 .step{background:#fff;border-radius:14px;padding:34px 28px;box-shadow:0 8px 30px rgba(0,0,0,.05);position:relative;transition:.35s;border-top:3px solid transparent}
@@ -229,14 +237,12 @@ footer{background:#0e0f12;color:#888;text-align:center;padding:28px 20px;font-si
   <div class="head rv">
    <div class="eyebrow">Öncesi / Sonrası</div>
    <h2>Tadilatın gücü</h2>
-   <p>Doğru planlanmış bir tadilat, aynı mekânı bambaşka bir yaşam alanına dönüştürür. Çizgiyi kaydırın.</p>
+   <p>Doğru planlanmış bir tadilat, aynı yapıyı bambaşka bir yaşam alanına dönüştürür.</p>
   </div>
-  <div class="ba rv" id="ba">
-   <img src="https://images.unsplash.com/photo-1630699376059-b781970715b1?w=1400&q=70" alt="Öncesi">
-   <img class="after" id="baAfter" src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=1400&q=70" alt="Sonrası">
-   <span class="tag t1">ÖNCESİ</span><span class="tag t2">SONRASI</span>
-   <div class="line" id="baLine"></div><div class="knob" id="baKnob">⇄</div>
-   <input type="range" min="0" max="100" value="50" id="baRange" aria-label="Öncesi sonrası karşılaştırma">
+  <div class="ba2 rv">
+   <div class="bimg" style="background-position:center 0%"><span class="tag t1">ÖNCESİ</span></div>
+   <div class="arrow">➜</div>
+   <div class="bimg" style="background-position:center 100%"><span class="tag t2">SONRASI</span></div>
   </div>
  </div>
 </section>
@@ -349,9 +355,6 @@ function go(i,user){slides[cur].classList.remove('on');dots.children[cur].classL
  const s=slides[cur];s.classList.remove('on');void s.offsetWidth;s.classList.add('on');dots.children[cur].classList.add('on');
  if(user){clearInterval(timer);timer=setInterval(()=>go((cur+1)%slides.length),6500)}}
 dots.children[0].classList.add('on');timer=setInterval(()=>go((cur+1)%slides.length),6500);
-// before/after
-const r=document.getElementById('baRange'),af=document.getElementById('baAfter'),ln=document.getElementById('baLine'),kn=document.getElementById('baKnob');
-r.oninput=()=>{const v=r.value;af.style.clipPath=`inset(0 0 0 ${v}%)`;ln.style.left=kn.style.left=v+'%'};
 // reveal
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
 document.querySelectorAll('.rv').forEach(el=>io.observe(el));
