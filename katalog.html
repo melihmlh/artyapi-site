@@ -248,9 +248,9 @@ footer{background:#0e0f12;color:#888;text-align:center;padding:28px 20px;font-si
 
 <section class="khero" style="padding-top:150px">
  <div class="wrap">
-  <div class="eyebrow">Ürün Grupları</div>
-  <h1>Ürün Kataloğu</h1>
-  <p>Çelik kapı, Amerikan panel ve melamin kapı modellerimiz ile Çanakkale Seramik ve Kalebodur duvar ve zemin karoları. Fiyat için ürünün altındaki butona dokunun.</p>
+  <div class="eyebrow">Malzeme Kataloğu</div>
+  <h1>Uyguladığımız 1. Sınıf Malzemeler</h1>
+  <p>Projelerimizde kullandığımız seramik, porselen karo ve kapı sistemleri. Tasarımınıza uygun malzemeyi birlikte seçiyor, uygulamasını da biz yapıyoruz. Fiyat için ürünün altındaki butona dokunun.</p>
   <a class="btn btn-line" href="Art_Yapi_Kapi_Katalogu.pdf" target="_blank" rel="noopener">Kataloğu PDF olarak indir</a>
  </div>
 </section>
@@ -318,7 +318,7 @@ lb.querySelector('.x').onclick=lbClose;lb.onclick=e=>{if(e.target===lb)lbClose()
 lb.querySelector('.pv').onclick=()=>{lbI=(lbI-1+lbList.length)%lbList.length;lbShow()};lb.querySelector('.nx').onclick=()=>{lbI=(lbI+1)%lbList.length;lbShow()};
 document.addEventListener('keydown',e=>{if(!lb.classList.contains('on'))return;if(e.key==='Escape')lbClose();if(e.key==='ArrowLeft')lb.querySelector('.pv').click();if(e.key==='ArrowRight')lb.querySelector('.nx').click()});
 // tabs
-let serLoaded=false;function loadSer(){if(serLoaded)return;serLoaded=true;const sc=document.createElement('script');sc.src='seramik.js?v=2';document.body.appendChild(sc)}
+let serLoaded=false;function loadSer(){if(serLoaded)return;serLoaded=true;const sc=document.createElement('script');sc.src='seramik.js?v=3';document.body.appendChild(sc)}
 if(location.hash==='#seramik')setTimeout(()=>document.querySelector('.tab[data-t=seramik]').click(),0);
 document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{if(b.dataset.t==='seramik')loadSer();document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on',x===b));document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('on',p.id===b.dataset.t));document.querySelectorAll('.panel.on .rv').forEach(e=>e.classList.add('in'))});
 // reveal
