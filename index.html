@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--gold:#c8a165;--gold2:#e2c38f;--dark:#14161a;--dark2:#1d2026;--text:#2a2d33;--muted:#6b7079;--bg:#faf8f5;--white:#fff}
+:root{--gold:#cfae5c;--gold2:#e6cc85;--dark:#14161a;--dark2:#1d2026;--text:#2a2d33;--muted:#6b7079;--bg:#faf8f5;--white:#fff}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{font-family:Inter,system-ui,sans-serif;color:var(--text);background:var(--bg);line-height:1.6;overflow-x:hidden}
@@ -111,14 +111,14 @@ section{padding:100px 0}
 /* region */
 .region{background:linear-gradient(rgba(20,22,26,.86),rgba(20,22,26,.86)),url(https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1600&q=70) center/cover fixed;color:#fff;text-align:center}
 .chips{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:30px}
-.chips span{border:1px solid rgba(200,161,101,.6);padding:9px 20px;border-radius:30px;font-size:.95rem;transition:.3s}
+.chips span{border:1px solid rgba(207,174,92,.6);padding:9px 20px;border-radius:30px;font-size:.95rem;transition:.3s}
 .chips span:hover{background:var(--gold);color:#111}
 
 .partners-sec{background:linear-gradient(135deg,#14161a,#22252c);color:#fff}
 .partners-sec .head p{color:#aaa}
 .partners{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1000px;margin:0 auto}
-.partner{background:rgba(255,255,255,.04);border:1px solid rgba(200,161,101,.25);border-radius:16px;padding:38px 24px 32px;text-align:center;transition:.4s}
-.partner:hover{transform:translateY(-8px);border-color:var(--gold);background:rgba(200,161,101,.08)}
+.partner{background:rgba(255,255,255,.04);border:1px solid rgba(207,174,92,.25);border-radius:16px;padding:38px 24px 32px;text-align:center;transition:.4s}
+.partner:hover{transform:translateY(-8px);border-color:var(--gold);background:rgba(207,174,92,.08)}
 .mark{width:96px;height:96px;margin:0 auto 20px;display:block}
 .partner b{display:block;font-family:"Playfair Display",serif;font-size:1.3rem;letter-spacing:.02em;margin-bottom:4px}
 .partner span{color:var(--gold);font-size:.78rem;letter-spacing:.22em;text-transform:uppercase}
@@ -137,7 +137,7 @@ details p{padding:0 24px 22px;color:var(--muted)}
 .cinfo h2{font-size:clamp(1.9rem,3.4vw,2.6rem);margin:10px 0 18px}
 .cinfo p{color:#bbb;margin-bottom:28px}
 .line-item{display:flex;gap:16px;align-items:center;margin-bottom:18px}
-.line-item i{width:48px;height:48px;border-radius:50%;background:rgba(200,161,101,.15);color:var(--gold);display:grid;place-items:center;font-style:normal;font-size:1.2rem;flex:none}
+.line-item i{width:48px;height:48px;border-radius:50%;background:rgba(207,174,92,.15);color:var(--gold);display:grid;place-items:center;font-style:normal;font-size:1.2rem;flex:none}
 .line-item small{display:block;color:#999;font-size:.8rem}
 .map{border-radius:14px;overflow:hidden;min-height:380px}
 .map iframe{width:100%;height:100%;min-height:380px;border:0;filter:grayscale(.3)}
@@ -177,7 +177,7 @@ footer{background:#0e0f12;color:#888;text-align:center;padding:28px 20px;font-si
 
 <header id="hdr">
  <div class="wrap nav">
-  <a href="#" class="logo">Art Yapı<small>TASARIM & DEKORASYON</small></a>
+  <a href="#" class="logo"><img src="logo.webp" alt="Art Yapı Tasarım & Dekorasyon" style="height:56px;width:auto;display:block"></a>
   <nav class="menu" id="menu">
    <a href="#hizmetler">Hizmetler</a>
    <a href="#donusum">Öncesi / Sonrası</a>
@@ -298,9 +298,9 @@ footer{background:#0e0f12;color:#888;text-align:center;padding:28px 20px;font-si
    <p>Mimari proje, mühendislik ve inşaat alanındaki çözüm ortaklarımızla büyük ölçekli konut ve kurumsal projelerde de yanınızdayız.</p>
   </div>
   <div class="partners">
-   <div class="partner rv"><svg class="mark" viewBox="0 0 100 100"><defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e2c38f"/><stop offset="1" stop-color="#a77d3f"/></linearGradient></defs><polygon points="50,4 90,27 90,73 50,96 10,73 10,27" fill="none" stroke="url(#g1)" stroke-width="3"/><polygon points="50,14 81,32 81,68 50,86 19,68 19,32" fill="rgba(200,161,101,.12)"/><text x="50" y="60" text-anchor="middle" font-family="Playfair Display,serif" font-size="30" font-weight="700" fill="url(#g1)">SM</text></svg><b>Serdem Mühendislik</b><span>Mühendislik</span></div>
-   <div class="partner rv d1"><svg class="mark" viewBox="0 0 100 100"><defs><linearGradient id="g2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e2c38f"/><stop offset="1" stop-color="#a77d3f"/></linearGradient></defs><rect x="8" y="8" width="84" height="84" rx="14" fill="rgba(200,161,101,.12)" stroke="url(#g2)" stroke-width="3"/><path d="M22 42 L50 20 L78 42" fill="none" stroke="url(#g2)" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/><text x="50" y="74" text-anchor="middle" font-family="Playfair Display,serif" font-size="28" font-weight="700" fill="url(#g2)">KB</text></svg><b>KurtBal İnşaat</b><span>İnşaat</span></div>
-   <div class="partner rv d2"><svg class="mark" viewBox="0 0 100 100"><defs><linearGradient id="g3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e2c38f"/><stop offset="1" stop-color="#a77d3f"/></linearGradient></defs><circle cx="50" cy="50" r="44" fill="rgba(200,161,101,.12)" stroke="url(#g3)" stroke-width="3"/><circle cx="50" cy="50" r="36" fill="none" stroke="url(#g3)" stroke-width="1" stroke-dasharray="3 4"/><text x="50" y="60" text-anchor="middle" font-family="Playfair Display,serif" font-size="27" font-weight="700" fill="url(#g3)">ABM</text></svg><b>ABM Tasarım Yapı İnşaat</b><span>Tasarım & Yapı</span></div>
+   <div class="partner rv"><svg class="mark" viewBox="0 0 100 100"><defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e2c38f"/><stop offset="1" stop-color="#a77d3f"/></linearGradient></defs><polygon points="50,4 90,27 90,73 50,96 10,73 10,27" fill="none" stroke="url(#g1)" stroke-width="3"/><polygon points="50,14 81,32 81,68 50,86 19,68 19,32" fill="rgba(207,174,92,.12)"/><text x="50" y="60" text-anchor="middle" font-family="Playfair Display,serif" font-size="30" font-weight="700" fill="url(#g1)">SM</text></svg><b>Serdem Mühendislik</b><span>Mühendislik</span></div>
+   <div class="partner rv d1"><svg class="mark" viewBox="0 0 100 100"><defs><linearGradient id="g2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e2c38f"/><stop offset="1" stop-color="#a77d3f"/></linearGradient></defs><rect x="8" y="8" width="84" height="84" rx="14" fill="rgba(207,174,92,.12)" stroke="url(#g2)" stroke-width="3"/><path d="M22 42 L50 20 L78 42" fill="none" stroke="url(#g2)" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/><text x="50" y="74" text-anchor="middle" font-family="Playfair Display,serif" font-size="28" font-weight="700" fill="url(#g2)">KB</text></svg><b>KurtBal İnşaat</b><span>İnşaat</span></div>
+   <div class="partner rv d2"><svg class="mark" viewBox="0 0 100 100"><defs><linearGradient id="g3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e2c38f"/><stop offset="1" stop-color="#a77d3f"/></linearGradient></defs><circle cx="50" cy="50" r="44" fill="rgba(207,174,92,.12)" stroke="url(#g3)" stroke-width="3"/><circle cx="50" cy="50" r="36" fill="none" stroke="url(#g3)" stroke-width="1" stroke-dasharray="3 4"/><text x="50" y="60" text-anchor="middle" font-family="Playfair Display,serif" font-size="27" font-weight="700" fill="url(#g3)">ABM</text></svg><b>ABM Tasarım Yapı İnşaat</b><span>Tasarım & Yapı</span></div>
   </div>
  </div>
 </section>
@@ -334,7 +334,7 @@ footer{background:#0e0f12;color:#888;text-align:center;padding:28px 20px;font-si
  </div>
 </section>
 
-<footer>© <span id="yr"></span> Art Yapı Tasarım & Dekorasyon · Bursa · 0506 096 16 16</footer>
+<footer><img src="logo.webp" alt="Art Yapı" style="height:40px;margin:0 auto 12px;display:block">© <span id="yr"></span> Art Yapı Tasarım & Dekorasyon · Bursa · 0506 096 16 16</footer>
 
 <a class="fab" href="https://wa.me/905060961616" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 32 32"><path d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2c2 1.1 4.3 1.7 6.6 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.4c-2.1 0-4.1-.6-5.9-1.7l-.4-.3-3.8 1.2 1.2-3.7-.3-.4c-1.2-1.8-1.9-3.9-1.9-6 0-5.9 4.9-10.7 11-10.7s11 4.8 11 10.7-4.9 10.9-10.9 10.9zm6-8c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1c-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2s0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.5s0-.4 0-.6-.7-1.7-1-2.3c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4s-1.2 1.1-1.2 2.7 1.2 3.1 1.4 3.4c.2.2 2.3 3.5 5.6 4.9.8.3 1.4.5 1.9.7.8.2 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg></a>
 <div class="callbar"><a href="tel:+905060961616">☎ Ara</a><a href="https://wa.me/905060961616" target="_blank" rel="noopener">WhatsApp</a></div>
