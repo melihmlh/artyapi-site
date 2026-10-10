@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Art Yapı Tasarım & Dekorasyon | Bursa Tadilat ve Dekorasyon</title>
+<title>Ürün Kataloğu | Art Yapı Tasarım & Dekorasyon</title>
 <meta name="description" content="Bursa'da komple daire tadilatı, mutfak ve banyo yenileme, alçıpan, boya, seramik ve kurumsal projeler. Ücretsiz keşif: 0506 096 16 16">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -181,167 +181,63 @@ footer{background:#0e0f12;color:#888;text-align:center;padding:28px 20px;font-si
  footer{padding-bottom:80px}
 }
 </style>
+<style>
+.khero{background:linear-gradient(160deg,#14161a,#24272e);color:#fff;padding:150px 0 70px;text-align:center}
+.khero h1{font-size:clamp(2.2rem,5vw,3.4rem);margin:10px 0 14px}.khero p{color:#bbb;max-width:620px;margin:0 auto 28px}
+.tabs{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:-26px auto 40px;position:relative;z-index:2}
+.tab{background:#fff;border:2px solid #e5dccd;color:var(--text);padding:13px 26px;border-radius:40px;font-weight:600;cursor:pointer;font-family:inherit;font-size:1rem;box-shadow:0 6px 18px rgba(0,0,0,.08);transition:.25s}
+.tab.on{background:var(--gold);border-color:var(--gold);color:#111}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:26px}
+.pgrid.wide{grid-template-columns:repeat(auto-fill,minmax(320px,1fr))}
+.pc{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 8px 26px rgba(0,0,0,.07);display:flex;flex-direction:column;transition:.3s}
+.pc:hover{transform:translateY(-6px);box-shadow:0 16px 36px rgba(0,0,0,.12)}
+.pc .ph{background:#ece7df;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.pc .ph img{width:100%;height:340px;object-fit:cover;transition:transform .6s}
+.pgrid.wide .pc .ph img{height:auto}
+.pc:hover .ph img{transform:scale(1.05)}
+.pc .bd{padding:18px 18px 20px;display:flex;flex-direction:column;gap:10px;flex:1}
+.pc .code{display:inline-flex;align-self:flex-start;font-weight:700;font-size:.85rem;border-radius:4px;overflow:hidden}
+.pc .code b{background:#1d1f24;color:var(--gold);padding:4px 9px;letter-spacing:.08em}.pc .code i{font-style:normal;background:var(--gold);color:#111;padding:4px 10px}
+.pc h3{font-size:1.1rem}
+.pc .btn{justify-content:center;padding:12px 16px;font-size:.92rem;margin-top:auto}
+.panel{display:none}.panel.on{display:block}
+.note2{text-align:center;color:var(--muted);margin-top:34px;font-size:.92rem}
+</style>
 </head>
 <body>
 
-<header id="hdr">
+<header id="hdr" class="solid">
  <div class="wrap nav">
-  <a href="#" class="logo"><img src="logo.webp" alt="Art Yapı Tasarım & Dekorasyon" style="height:56px;width:auto;display:block"></a>
+  <a href="index.html" class="logo"><img src="logo.webp" alt="Art Yapı Tasarım & Dekorasyon" style="height:56px;width:auto;display:block"></a>
   <nav class="menu" id="menu">
-   <a href="#hizmetler">Hizmetler</a>
-   <a href="#donusum">Öncesi / Sonrası</a>
-   <a href="#surec">Nasıl Çalışırız</a>
+   <a href="index.html#hizmetler">Hizmetler</a>
+   <a href="index.html#donusum">Öncesi / Sonrası</a>
+   <a href="index.html#surec">Nasıl Çalışırız</a>
    <a href="katalog.html">Ürün Kataloğu</a>
-   <a href="#sss">SSS</a>
-   <a href="#iletisim">İletişim</a>
+   <a href="index.html#sss">SSS</a>
+   <a href="index.html#iletisim">İletişim</a>
    <a href="tel:+905060961616" class="btn btn-gold">0506 096 16 16</a>
   </nav>
   <button class="burger" id="burger" aria-label="Menü">☰</button>
  </div>
 </header>
 
-<section class="hero" style="padding:0">
- <div class="slide on" style="background-image:url(https://images.unsplash.com/photo-1618220179428-22790b461013?w=1920&q=75)"></div>
- <div class="slide" style="background-image:url(https://images.unsplash.com/photo-1602028915047-37269d1a73f7?w=1920&q=75)"></div>
- <div class="slide" style="background-image:url(https://images.unsplash.com/photo-1631889993959-41b4e9c6e3c5?w=1920&q=75)"></div>
- <div class="slide" style="background-image:url(https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1920&q=75)"></div>
+<section class="khero" style="padding-top:150px">
  <div class="wrap">
-  <div class="eyebrow rv">Bursa · Konut & Kurumsal</div>
-  <h1 class="rv d1">Yaşam alanınızı <span>A'dan Z'ye</span> yeniliyoruz</h1>
-  <p class="rv d2">Komple daire tadilatından mutfak ve banyoya, alçıpandan boyaya kadar tüm işleri keşiften teslime tek elden yürütüyoruz.</p>
-  <div class="cta rv d3">
-   <a class="btn btn-wa" href="https://wa.me/905060961616?text=Merhaba%2C%20%C3%BCcretsiz%20ke%C5%9Fif%20istiyorum." target="_blank" rel="noopener">WhatsApp'tan Ücretsiz Keşif</a>
-   <a class="btn btn-line" href="tel:+905060961616">Hemen Ara</a>
-  </div>
-  <div class="badges rv d3">
-   <div><i>✓</i>Ücretsiz yerinde keşif</div>
-   <div><i>✓</i>Yazılı, net fiyat</div>
-   <div><i>✓</i>Söz verilen tarihte teslim</div>
-  </div>
- </div>
- <div class="dots" id="dots"></div>
- <div class="scroll">AŞAĞI KAYDIR</div>
-</section>
-
-<section id="hizmetler">
- <div class="wrap">
-  <div class="head rv">
-   <div class="eyebrow">Hizmetlerimiz</div>
-   <h2>Tek firma, eksiksiz tadilat</h2>
-   <p>Farklı ustalarla tek tek uğraşmayın. Projenizi baştan sona tek muhatapla, planlı şekilde tamamlıyoruz.</p>
-  </div>
-  <div class="grid">
-   <div class="card rv"><img loading="lazy" src="https://images.unsplash.com/photo-1616047006789-b7af5afb8c20?w=800&q=70" alt="Komple daire tadilatı"><div class="ov"><span class="n">01</span><h3>Komple Daire Tadilatı</h3><p>Anahtar teslim yenileme: söküm, tesisat, alçı, boya, zemin ve montaj tek planda.</p></div></div>
-   <div class="card rv d1"><img loading="lazy" src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&q=70" alt="Mutfak yenileme"><div class="ov"><span class="n">02</span><h3>Mutfak Yenileme</h3><p>Dolap, tezgâh, seramik ve tesisat; ölçüye özel, kullanışlı mutfaklar.</p></div></div>
-   <div class="card rv d2"><img loading="lazy" src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=70" alt="Banyo yenileme"><div class="ov"><span class="n">03</span><h3>Banyo Yenileme</h3><p>Seramik, vitrifiye, su yalıtımı ve tesisat yenileme.</p></div></div>
-   <div class="card rv"><img loading="lazy" src="https://images.unsplash.com/photo-1667893310241-08bf719d6fce?w=800&q=70" alt="Alçıpan ve asma tavan"><div class="ov"><span class="n">04</span><h3>Alçıpan & Asma Tavan</h3><p>Bölme duvar, kartonpiyer, gizli aydınlatma ve dekoratif tavanlar.</p></div></div>
-   <div class="card rv d1"><img loading="lazy" src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=800&q=70" alt="Boya ve dekorasyon"><div class="ov"><span class="n">05</span><h3>Boya & Dekorasyon</h3><p>İç ve dış cephe boya, dekoratif duvar uygulamaları.</p></div></div>
-   <div class="card rv d2"><img loading="lazy" src="https://images.unsplash.com/photo-1563219125-1db796e20ff2?w=800&q=70" alt="Seramik ve zemin"><div class="ov"><span class="n">06</span><h3>Seramik, Fayans & Zemin</h3><p>Seramik, granit, parke ve zemin kaplama işleri.</p></div></div>
-  </div>
-  <div class="card rv" style="height:260px;margin-top:24px"><img loading="lazy" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1600&q=70" alt="Kurumsal projeler"><div class="ov" style="background:linear-gradient(90deg,rgba(10,10,12,.88),transparent 75%);justify-content:center"><span class="n">07</span><h3>Kurumsal Projeler</h3><p style="max-height:none;opacity:1;max-width:460px">Ofis, mağaza ve kurum binalarında iş akışınızı aksatmadan planlı tadilat.</p></div></div>
+  <div class="eyebrow">Ürün Grupları</div>
+  <h1>Ürün Kataloğu</h1>
+  <p>Çelik kapı, Amerikan panel ve melamin kapı modellerimiz. Ölçü, teslimat ve montaj dahil fiyat için modelin altındaki butona dokunun.</p>
+  <a class="btn btn-line" href="Art_Yapi_Kapi_Katalogu.pdf" target="_blank" rel="noopener">Kataloğu PDF olarak indir</a>
  </div>
 </section>
-
-<section class="ba-sec" id="donusum">
- <div class="wrap">
-  <div class="head rv">
-   <div class="eyebrow">Öncesi / Sonrası</div>
-   <h2>Tadilatın gücü</h2>
-   <p>Doğru planlanmış bir tadilat, aynı yapıyı bambaşka bir yaşam alanına dönüştürür.</p>
-  </div>
-  <div class="ba2 rv">
-   <div class="bimg" style="background-position:center 0%"><span class="tag t1">ÖNCESİ</span></div>
-   <div class="arrow">➜</div>
-   <div class="bimg" style="background-position:center 100%"><span class="tag t2">SONRASI</span></div>
-  </div>
- </div>
-</section>
-
-<section id="surec">
- <div class="wrap">
-  <div class="head rv">
-   <div class="eyebrow">Nasıl Çalışırız</div>
-   <h2>4 adımda sorunsuz tadilat</h2>
-  </div>
-  <div class="steps">
-   <div class="step rv"><h3>Ücretsiz Keşif</h3><p>Yerinde ölçü alıyor, ihtiyacınızı ve beklentinizi dinliyoruz.</p></div>
-   <div class="step rv d1"><h3>Yazılı Teklif</h3><p>Malzeme ve işçilik kalemleriyle net fiyat; sürpriz maliyet yok.</p></div>
-   <div class="step rv d2"><h3>Planlı Uygulama</h3><p>İş takvimine göre, temiz ve düzenli çalışıyoruz.</p></div>
-   <div class="step rv d3"><h3>Zamanında Teslim</h3><p>Söz verdiğimiz tarihte, kontrol edilmiş şekilde teslim ediyoruz.</p></div>
-  </div>
- </div>
-</section>
-
 <section style="padding-top:0">
- <div class="wrap split">
-  <div class="pic rv"><img loading="lazy" src="https://images.unsplash.com/photo-1505798577917-a65157d3320a?w=1000&q=70" alt="Uygulama"><div class="float">Keşiften teslime tek muhatap</div></div>
-  <div class="rv d1">
-   <div class="eyebrow">Neden Art Yapı?</div>
-   <h2>Kurumsal düzende, şeffaf çalışma</h2>
-   <p style="color:var(--muted)">Tadilatın en zor tarafı belirsizliktir. Biz işe net bir plan ve yazılı teklifle başlıyoruz.</p>
-   <ul class="checks">
-    <li>Tüm işler tek ekip, tek sorumlu</li>
-    <li>Kalem kalem yazılı fiyat teklifi</li>
-    <li>Belirli iş takvimi ve düzenli bilgilendirme</li>
-    <li>Temiz şantiye, temiz teslim</li>
-   </ul>
-   <a class="btn btn-gold" href="#iletisim">Keşif Randevusu Al</a>
-  </div>
- </div>
-</section>
-
-<section class="region">
  <div class="wrap">
-  <div class="eyebrow rv">Hizmet Bölgemiz</div>
-  <h2 class="rv d1" style="font-size:clamp(1.9rem,3.4vw,2.6rem);margin-top:10px">Bursa'nın tüm ilçelerindeyiz</h2>
-  <div class="chips rv d2">
-   <span>Osmangazi</span><span>Nilüfer</span><span>Yıldırım</span><span>Mudanya</span><span>Gürsu</span><span>Kestel</span><span>İnegöl</span><span>Gemlik</span><span>Mustafakemalpaşa</span><span>Karacabey</span><span>Orhangazi</span><span>ve diğerleri</span>
-  </div>
+  <div class="tabs"><button class="tab on" data-t="celik">Çelik Kapılar</button><button class="tab" data-t="ic">Amerikan Panel &amp; Melamin Kapılar</button></div>
+  <div class="panel on" id="celik"><div class="pgrid"><div class="pc rv"><div class="ph"><img loading="lazy" src="img/c1.jpg" alt="ART 01 Çelik Kapı"></div><div class="bd"><span class="code"><b>ART</b><i>01</i></span><h3>Çelik Kapı</h3><a class="btn btn-wa" href="https://wa.me/905060961616?text=Merhaba%2C%20ART%2001%20%28%C3%87elik%20Kap%C4%B1%29%20i%C3%A7in%20fiyat%20almak%20istiyorum." target="_blank" rel="noopener">Fiyat için iletişime geçin</a></div></div><div class="pc rv"><div class="ph"><img loading="lazy" src="img/c2.jpg" alt="ART 02 Çelik Kapı"></div><div class="bd"><span class="code"><b>ART</b><i>02</i></span><h3>Çelik Kapı</h3><a class="btn btn-wa" href="https://wa.me/905060961616?text=Merhaba%2C%20ART%2002%20%28%C3%87elik%20Kap%C4%B1%29%20i%C3%A7in%20fiyat%20almak%20istiyorum." target="_blank" rel="noopener">Fiyat için iletişime geçin</a></div></div><div class="pc rv"><div class="ph"><img loading="lazy" src="img/c3.jpg" alt="ART 03 Çelik Kapı"></div><div class="bd"><span class="code"><b>ART</b><i>03</i></span><h3>Çelik Kapı</h3><a class="btn btn-wa" href="https://wa.me/905060961616?text=Merhaba%2C%20ART%2003%20%28%C3%87elik%20Kap%C4%B1%29%20i%C3%A7in%20fiyat%20almak%20istiyorum." target="_blank" rel="noopener">Fiyat için iletişime geçin</a></div></div><div class="pc rv"><div class="ph"><img loading="lazy" src="img/c4.jpg" alt="ART 04 Çelik Kapı"></div><div class="bd"><span class="code"><b>ART</b><i>04</i></span><h3>Çelik Kapı</h3><a class="btn btn-wa" href="https://wa.me/905060961616?text=Merhaba%2C%20ART%2004%20%28%C3%87elik%20Kap%C4%B1%29%20i%C3%A7in%20fiyat%20almak%20istiyorum." target="_blank" rel="noopener">Fiyat için iletişime geçin</a></div></div><div class="pc rv"><div class="ph"><img loading="lazy" src="img/c5.jpg" alt="ART 05 Çelik Kapı"></div><div class="bd"><span class="code"><b>ART</b><i>05</i></span><h3>Çelik Kapı</h3><a class="btn btn-wa" href="https://wa.me/905060961616?text=Merhaba%2C%20ART%2005%20%28%C3%87elik%20Kap%C4%B1%29%20i%C3%A7in%20fiyat%20almak%20istiyorum." target="_blank" rel="noopener">Fiyat için iletişime geçin</a></div></div><div class="pc rv"><div class="ph"><img loading="lazy" src="img/c6.jpg" alt="ART 06 Çelik Kapı"></div><div class="bd"><span class="code"><b>ART</b><i>06</i></span><h3>Çelik Kapı</h3><a class="btn btn-wa" href="https://wa.me/905060961616?text=Merhaba%2C%20ART%2006%20%28%C3%87elik%20Kap%C4%B1%29%20i%C3%A7in%20fiyat%20almak%20istiyorum." target="_blank" rel="noopener">Fiyat için iletişime geçin</a></div></div><div class="pc rv"><div class="ph"><img loading="lazy" src="img/c7.jpg" alt="ART 07 Çelik Kapı"></div><div class="bd"><span class="code"><b>ART</b><i>07</i></span><h3>Çelik Kapı</h3><a class="btn btn-wa" href="https://wa.me/905060961616?text=Merhaba%2C%20ART%2007%20%28%C3%87elik%20Kap%C4%B1%29%20i%C3%A7in%20fiyat%20almak%20istiyorum." target="_blank" rel="noopener">Fiyat için iletişime geçin</a></div></div><div class="pc rv"><div class="ph"><img loading="lazy" src="img/c8.jpg" alt="ART 08 Çelik Kapı"></div><div class="bd"><span class="code"><b>ART</b><i>08</i></span><h3>Çelik Kapı</h3><a class="btn btn-wa" href="https://wa.me/905060961616?text=Merhaba%2C%20ART%2008%20%28%C3%87elik%20Kap%C4%B1%29%20i%C3%A7in%20fiyat%20almak%20istiyorum." target="_blank" rel="noopener">Fiyat için iletişime geçin</a></div></div><div class="pc rv"><div class="ph"><img loading="lazy" src="img/c9.jpg" alt="ART 09 Çelik Kapı"></div><div class="bd"><span class="code"><b>ART</b><i>09</i></span><h3>Çelik Kapı</h3><a class="btn btn-wa" href="https://wa.me/905060961616?text=Merhaba%2C%20ART%2009%20%28%C3%87elik%20Kap%C4%B1%29%20i%C3%A7in%20fiyat%20almak%20istiyorum." target="_blank" rel="noopener">Fiyat için iletişime geçin</a></div></div><div class="pc rv"><div class="ph"><img loading="lazy" src="img/c10.jpg" alt="ART 10 Çelik Kapı"></div><div class="bd"><span class="code"><b>ART</b><i>10</i></span><h3>Çelik Kapı</h3><a class="btn btn-wa" href="https://wa.me/905060961616?text=Merhaba%2C%20ART%2010%20%28%C3%87elik%20Kap%C4%B1%29%20i%C3%A7in%20fiyat%20almak%20istiyorum." target="_blank" rel="noopener">Fiyat için iletişime geçin</a></div></div></div></div>
+  <div class="panel" id="ic"><div class="pgrid wide"><div class="pc rv"><div class="ph"><img loading="lazy" src="img/i1.jpg" alt="ART-M 01 Melamin Kapı"></div><div class="bd"><span class="code"><b>ART-M</b><i>01</i></span><h3>Melamin Kapı</h3><a class="btn btn-wa" href="https://wa.me/905060961616?text=Merhaba%2C%20ART-M%2001%20%28Melamin%20Kap%C4%B1%29%20i%C3%A7in%20fiyat%20almak%20istiyorum." target="_blank" rel="noopener">Fiyat için iletişime geçin</a></div></div><div class="pc rv"><div class="ph"><img loading="lazy" src="img/i2.jpg" alt="ART-M 02 Melamin Kapı"></div><div class="bd"><span class="code"><b>ART-M</b><i>02</i></span><h3>Melamin Kapı</h3><a class="btn btn-wa" href="https://wa.me/905060961616?text=Merhaba%2C%20ART-M%2002%20%28Melamin%20Kap%C4%B1%29%20i%C3%A7in%20fiyat%20almak%20istiyorum." target="_blank" rel="noopener">Fiyat için iletişime geçin</a></div></div><div class="pc rv"><div class="ph"><img loading="lazy" src="img/i3.jpg" alt="ART-A 01 Amerikan Panel Kapı"></div><div class="bd"><span class="code"><b>ART-A</b><i>01</i></span><h3>Amerikan Panel Kapı</h3><a class="btn btn-wa" href="https://wa.me/905060961616?text=Merhaba%2C%20ART-A%2001%20%28Amerikan%20Panel%20Kap%C4%B1%29%20i%C3%A7in%20fiyat%20almak%20istiyorum." target="_blank" rel="noopener">Fiyat için iletişime geçin</a></div></div><div class="pc rv"><div class="ph"><img loading="lazy" src="img/i4.jpg" alt="ART-M 03 Melamin Kapı"></div><div class="bd"><span class="code"><b>ART-M</b><i>03</i></span><h3>Melamin Kapı</h3><a class="btn btn-wa" href="https://wa.me/905060961616?text=Merhaba%2C%20ART-M%2003%20%28Melamin%20Kap%C4%B1%29%20i%C3%A7in%20fiyat%20almak%20istiyorum." target="_blank" rel="noopener">Fiyat için iletişime geçin</a></div></div><div class="pc rv"><div class="ph"><img loading="lazy" src="img/i5.jpg" alt="ART-M 04 Melamin Kapı"></div><div class="bd"><span class="code"><b>ART-M</b><i>04</i></span><h3>Melamin Kapı</h3><a class="btn btn-wa" href="https://wa.me/905060961616?text=Merhaba%2C%20ART-M%2004%20%28Melamin%20Kap%C4%B1%29%20i%C3%A7in%20fiyat%20almak%20istiyorum." target="_blank" rel="noopener">Fiyat için iletişime geçin</a></div></div><div class="pc rv"><div class="ph"><img loading="lazy" src="img/i6.jpg" alt="ART-A 02 Amerikan Panel Kapı"></div><div class="bd"><span class="code"><b>ART-A</b><i>02</i></span><h3>Amerikan Panel Kapı</h3><a class="btn btn-wa" href="https://wa.me/905060961616?text=Merhaba%2C%20ART-A%2002%20%28Amerikan%20Panel%20Kap%C4%B1%29%20i%C3%A7in%20fiyat%20almak%20istiyorum." target="_blank" rel="noopener">Fiyat için iletişime geçin</a></div></div></div></div>
+  <p class="note2">Farklı ölçü, renk ve model seçenekleri için bize ulaşın. Yerinde ücretsiz ölçü alıyoruz.</p>
  </div>
 </section>
-
-<section class="partners-sec" id="cozum-ortaklari">
- <div class="wrap">
-  <div class="head rv">
-   <div class="eyebrow">Çözüm Ortaklarımız</div>
-   <h2>Güçlü bir ekosistemle çalışıyoruz</h2>
-   <p>Mimari proje, mühendislik ve inşaat alanındaki çözüm ortaklarımızla büyük ölçekli konut ve kurumsal projelerde de yanınızdayız.</p>
-  </div>
-  <div class="partners">
-   <div class="partner rv"><svg class="mark" viewBox="0 0 100 100"><defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e2c38f"/><stop offset="1" stop-color="#a77d3f"/></linearGradient></defs><polygon points="50,4 90,27 90,73 50,96 10,73 10,27" fill="none" stroke="url(#g1)" stroke-width="3"/><polygon points="50,14 81,32 81,68 50,86 19,68 19,32" fill="rgba(207,174,92,.12)"/><text x="50" y="60" text-anchor="middle" font-family="Playfair Display,serif" font-size="30" font-weight="700" fill="url(#g1)">SM</text></svg><b>Serdem Mühendislik</b><span>Mühendislik</span></div>
-   <div class="partner rv d1"><svg class="mark" viewBox="0 0 100 100"><defs><linearGradient id="g2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e2c38f"/><stop offset="1" stop-color="#a77d3f"/></linearGradient></defs><rect x="8" y="8" width="84" height="84" rx="14" fill="rgba(207,174,92,.12)" stroke="url(#g2)" stroke-width="3"/><path d="M22 42 L50 20 L78 42" fill="none" stroke="url(#g2)" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/><text x="50" y="74" text-anchor="middle" font-family="Playfair Display,serif" font-size="28" font-weight="700" fill="url(#g2)">KB</text></svg><b>KurtBal İnşaat</b><span>İnşaat</span></div>
-   <div class="partner rv d2"><svg class="mark" viewBox="0 0 100 100"><defs><linearGradient id="g3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e2c38f"/><stop offset="1" stop-color="#a77d3f"/></linearGradient></defs><circle cx="50" cy="50" r="44" fill="rgba(207,174,92,.12)" stroke="url(#g3)" stroke-width="3"/><circle cx="50" cy="50" r="36" fill="none" stroke="url(#g3)" stroke-width="1" stroke-dasharray="3 4"/><text x="50" y="60" text-anchor="middle" font-family="Playfair Display,serif" font-size="27" font-weight="700" fill="url(#g3)">ABM</text></svg><b>ABM Tasarım Yapı İnşaat</b><span>Tasarım & Yapı</span></div>
-  </div>
- </div>
-</section>
-
-<section class="kat-cta">
- <div class="wrap">
-  <div class="eyebrow rv">Ürün Kataloğu</div>
-  <h2 class="rv d1" style="font-size:clamp(1.8rem,3.4vw,2.5rem);margin:10px 0 14px">Çelik ve iç kapı modellerimizi inceleyin</h2>
-  <p class="rv d2" style="color:var(--muted);max-width:560px;margin:0 auto 26px">Beğendiğiniz modelin kodunu WhatsApp'tan gönderin, ölçü ve montaj dahil fiyatını hemen iletelim.</p>
-  <a class="btn btn-gold rv d3" href="katalog.html">Kataloğu Görüntüle</a>
- </div>
-</section>
-
-<section class="refs" id="referanslar">
- <div class="wrap"><div class="head rv"><div class="eyebrow">Kurumsal Referanslarımız</div><h2>Kurumların tercih ettiği ekip</h2></div></div>
- <div class="mq-wrap"><div class="marquee"><span>Uludağ Jandarma Sosyal Tesisleri</span><span>Bursa Öğretmenevi</span><span>Bursa Ahmet Vefik Paşa Anadolu Lisesi</span><span>Fertur İmam Hatip Ortaokulu</span><span>Demirtaş İsmail Hakkı Bursevi Kız Anadolu İmam Hatip Lisesi</span><span>Uludağ Jandarma Sosyal Tesisleri</span><span>Bursa Öğretmenevi</span><span>Bursa Ahmet Vefik Paşa Anadolu Lisesi</span><span>Fertur İmam Hatip Ortaokulu</span><span>Demirtaş İsmail Hakkı Bursevi Kız Anadolu İmam Hatip Lisesi</span></div></div>
-</section>
-
-<section id="sss">
- <div class="wrap">
-  <div class="head rv"><div class="eyebrow">Sıkça Sorulan Sorular</div><h2>Merak edilenler</h2></div>
-  <div class="faq rv">
-   <details><summary>Keşif ücretli mi?</summary><p>Hayır. Bursa içinde yerinde keşif ve fiyat teklifi tamamen ücretsizdir.</p></details>
-   <details><summary>Fiyatı nasıl belirliyorsunuz?</summary><p>Keşif sonrası malzeme ve işçilik kalemlerini içeren yazılı bir teklif hazırlıyoruz. Onayladığınız teklif dışında sürpriz maliyet çıkmaz.</p></details>
-   <details><summary>Ön fiyat almak için ne yapmalıyım?</summary><p>WhatsApp'tan alanın fotoğraflarını ve yaklaşık ölçülerini gönderin; size hızlıca ön fiyat aralığı verelim.</p></details>
-   <details><summary>Sadece tek bir iş (ör. banyo) yaptırabilir miyim?</summary><p>Elbette. Komple tadilatın yanı sıra yalnızca mutfak, banyo, boya veya alçıpan gibi tekil işleri de üstleniyoruz.</p></details>
-   <details><summary>Ofis ve mağaza işleri yapıyor musunuz?</summary><p>Evet. Kurumsal projelerde çalışma düzeninizi aksatmayacak şekilde planlama yapıyoruz.</p></details>
-  </div>
- </div>
-</section>
-
 <section class="contact" id="iletisim">
  <div class="wrap cbox">
   <div class="cinfo rv">
@@ -367,18 +263,20 @@ footer{background:#0e0f12;color:#888;text-align:center;padding:28px 20px;font-si
 document.getElementById('yr').textContent=new Date().getFullYear();
 // header
 const hdr=document.getElementById('hdr');
-const onS=()=>hdr.classList.toggle('solid',scrollY>40);addEventListener('scroll',onS);onS();
+const onS=()=>hdr.classList.add('solid');addEventListener('scroll',onS);onS();
 // menu
 const menu=document.getElementById('menu');
 document.getElementById('burger').onclick=()=>menu.classList.toggle('open');
 menu.querySelectorAll('a').forEach(a=>a.onclick=()=>menu.classList.remove('open'));
 // hero slider
-const slides=[...document.querySelectorAll('.slide')],dots=document.getElementById('dots');let cur=0,timer;
+const slides=[...document.querySelectorAll('.slide')],dots=document.getElementById('dots');if(dots){let cur=0,timer;
 slides.forEach((_,i)=>{const b=document.createElement('b');b.onclick=()=>go(i,true);dots.appendChild(b)});
 function go(i,user){slides[cur].classList.remove('on');dots.children[cur].classList.remove('on');cur=i;
  const s=slides[cur];s.classList.remove('on');void s.offsetWidth;s.classList.add('on');dots.children[cur].classList.add('on');
  if(user){clearInterval(timer);timer=setInterval(()=>go((cur+1)%slides.length),6500)}}
-dots.children[0].classList.add('on');timer=setInterval(()=>go((cur+1)%slides.length),6500);
+dots.children[0].classList.add('on');timer=setInterval(()=>go((cur+1)%slides.length),6500);}
+// tabs
+document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on',x===b));document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('on',p.id===b.dataset.t));document.querySelectorAll('.panel.on .rv').forEach(e=>e.classList.add('in'))});
 // reveal
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
 document.querySelectorAll('.rv').forEach(el=>io.observe(el));
