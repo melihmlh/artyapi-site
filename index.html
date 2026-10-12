@@ -123,6 +123,21 @@ section{padding:100px 0}
 .partner b{display:block;font-family:"Playfair Display",serif;font-size:1.3rem;letter-spacing:.02em;margin-bottom:4px}
 .partner span{color:var(--gold);font-size:.78rem;letter-spacing:.22em;text-transform:uppercase}
 @media(max-width:800px){.partners{grid-template-columns:1fr}}
+.xsv{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px;margin-top:24px}.xsv div{background:#fff;border-radius:14px;padding:20px;box-shadow:0 6px 20px rgba(0,0,0,.06);border-left:3px solid var(--gold)}.xsv b{display:block;font-size:1.02rem;margin:6px 0 6px}.xsv i{font-style:normal;font-size:1.5rem}.xsv p{font-size:.9rem;color:var(--muted);line-height:1.5}
+.rv-sec{background:#1d1f24;color:#fff}.rv-sec .head h2{color:#fff}.rv-sec .head p{color:#bbb}
+.rform{max-width:720px;margin:0 auto;background:#26292f;border-radius:16px;padding:30px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.rform label{font-size:.85rem;color:#ccc;display:flex;flex-direction:column;gap:6px}.rform .full{grid-column:1/-1}
+.rform input,.rform select,.rform textarea{background:#1a1c20;border:1px solid #3a3d44;border-radius:10px;padding:12px;color:#fff;font:inherit}
+.rform textarea{min-height:110px;resize:vertical}.stars{display:flex;gap:6px;font-size:1.9rem;cursor:pointer;user-select:none}.stars span{color:#555;transition:.15s}.stars span.on{color:var(--gold)}
+.rform .chk{flex-direction:row;align-items:flex-start;gap:10px;font-size:.82rem}.rform .chk input{margin-top:3px}
+.rform button{grid-column:1/-1;justify-self:center}.rmsg{grid-column:1/-1;text-align:center;font-size:1.05rem;color:var(--gold);display:none;padding:10px}
+@media(max-width:700px){.rform{grid-template-columns:1fr;padding:22px}}
+.jobs{background:#f6f3ee}.jgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px}
+.jc{background:#fff;border-radius:14px;padding:22px 22px 24px;box-shadow:0 6px 20px rgba(0,0,0,.06);border-top:3px solid var(--gold)}
+.jt{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:12px}
+.jcat{background:#1d1f24;color:var(--gold);font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:4px 10px;border-radius:20px}
+.jloc{font-size:.85rem;color:var(--muted);font-weight:600}.jc h3{font-size:1.12rem;margin-bottom:8px}.jc p{font-size:.93rem;color:var(--muted);line-height:1.55}
+.jobs .jx{display:none}.jobs.all .jx{display:block}
 .refs{background:var(--dark);color:#fff;padding:56px 0;overflow:hidden}
 .refs .head{margin-bottom:28px}
 .refs-top{padding:26px 0 30px}.refs-top .head{opacity:1!important;transform:none!important}.refs .head h2{font-size:clamp(1.6rem,3vw,2.2rem)}
@@ -250,9 +265,50 @@ footer{background:#0e0f12;color:#888;text-align:center;padding:28px 20px;font-si
    <div class="card rv d1"><img loading="lazy" src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=800&q=70" alt="Boya ve dekorasyon"><div class="ov"><span class="n">05</span><h3>Boya & Dekorasyon</h3><p>İç ve dış cephe boya, dekoratif duvar uygulamaları.</p></div></div>
    <div class="card rv d2"><img loading="lazy" src="https://images.unsplash.com/photo-1563219125-1db796e20ff2?w=800&q=70" alt="Seramik ve zemin"><div class="ov"><span class="n">06</span><h3>Seramik, Fayans & Zemin</h3><p>Seramik, granit, parke ve zemin kaplama işleri.</p></div></div>
   </div>
+  <div class="xsv"><div class="rv"><i>🔥</i><b>Yerden Isıtma</b><p>Şap altı borulama, kombi bağlantısı ve basınç testi.</p></div><div class="rv"><i>🚿</i><b>Sıhhi Tesisat & Su Kaçağı</b><p>Temiz/pis su tesisatı yenileme, kırmadan su kaçağı tespiti.</p></div><div class="rv"><i>🪟</i><b>Balkon Kapatma</b><p>Balkonu camla kapatıp kullanılabilir yaşam alanına dönüştürme.</p></div><div class="rv"><i>🧱</i><b>Ytong & Bölme Duvar</b><p>Ytong duvar örme, oda bölme ve yeni düzen oluşturma.</p></div><div class="rv"><i>🪑</i><b>Özel Mobilya</b><p>Ölçüye özel vestiyer, dolap ve TV ünitesi imalat ve montajı.</p></div></div>
   <div class="card rv" style="height:260px;margin-top:24px"><img loading="lazy" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1600&q=70" alt="Kurumsal projeler"><div class="ov" style="background:linear-gradient(90deg,rgba(10,10,12,.88),transparent 75%);justify-content:center"><span class="n">07</span><h3>Kurumsal Projeler</h3><p style="max-height:none;opacity:1;max-width:460px">Ofis, mağaza ve kurum binalarında iş akışınızı aksatmadan planlı tadilat.</p></div></div>
  </div>
 </section>
+
+<section class="jobs" id="isler">
+ <div class="wrap">
+  <div class="head rv">
+   <div class="eyebrow">Yaptığımız İşler</div>
+   <h2>Bursa'daki Evlerden Son İşlerimiz</h2>
+   <p>Tek bir tezgah arasından komple daire yenilemeye; her ölçekteki işi aynı özenle yapıyoruz.</p>
+  </div>
+  <div class="jgrid"><div class="jc rv"><div class="jt"><span class="jcat">Banyo</span><span class="jloc">📍 Nilüfer</span></div><h3>Banyo Yenileme</h3><p>Banyo baştan aşağı yenilendi; daha ferah ve kullanışlı bir yaşam alanı olarak kısa sürede teslim edildi.</p></div><div class="jc rv"><div class="jt"><span class="jcat">Mutfak</span><span class="jloc">📍 Osmangazi</span></div><h3>Mutfak Dolabı Yenileme</h3><p>Mutfak dolapları değiştirildi; montaj sonrası alan temizlenerek teslim edildi.</p></div><div class="jc rv"><div class="jt"><span class="jcat">Komple</span><span class="jloc">📍 Yıldırım</span></div><h3>Komple Ev Tadilatı</h3><p>Evin tüm tesisatı yenilendi, gerekli kırım ve onarımlarla birlikte baştan sona tamamlandı.</p></div><div class="jc rv"><div class="jt"><span class="jcat">Tesisat</span><span class="jloc">📍 Nilüfer</span></div><h3>Yerden Isıtma Tesisatı</h3><p>Kış öncesi yerden ısıtma tesisatı kuruldu; süreç boyunca ev sahibi her adımda bilgilendirildi.</p></div><div class="jc rv"><div class="jt"><span class="jcat">Boya</span><span class="jloc">📍 Nilüfer</span></div><h3>İç Cephe Boya Badana</h3><p>Evin tamamı boyandı; eşyalar korunarak, boya sıçratmadan temiz teslim edildi.</p></div><div class="jc rv"><div class="jt"><span class="jcat">Yapı</span><span class="jloc">📍 Nilüfer</span></div><h3>Balkon Kapatma</h3><p>Balkon kapatılarak oda gibi kullanılabilir bir yaşam alanına dönüştürüldü.</p></div><div class="jc rv"><div class="jt"><span class="jcat">Ticari</span><span class="jloc">📍 Osmangazi</span></div><h3>Ofis Tadilatı</h3><p>Ofis tadilatı anahtar teslim yapıldı; anlaşılan bütçenin dışına çıkılmadı.</p></div><div class="jc rv"><div class="jt"><span class="jcat">Seramik</span><span class="jloc">📍 Osmangazi</span></div><h3>Seramik Değişimi</h3><p>Mutfak tezgah arası seramikleri değiştirildi, söz verilen saatte başlayıp aynı gün bitirildi.</p></div><div class="jc rv jx"><div class="jt"><span class="jcat">Banyo</span><span class="jloc">📍 Nilüfer</span></div><h3>Duşakabin ve Su Tesisatı</h3><p>Duşakabin montajı ve su tesisatı yenilemesi temiz işçilikle yapıldı.</p></div><div class="jc rv jx"><div class="jt"><span class="jcat">Zemin</span><span class="jloc">📍 Yıldırım</span></div><h3>Parke Döşeme</h3><p>Laminat parke ve süpürgelik uygulaması milimetrik işçilikle tamamlandı.</p></div><div class="jc rv jx"><div class="jt"><span class="jcat">Tavan</span><span class="jloc">📍 Osmangazi</span></div><h3>Alçıpan Asma Tavan</h3><p>Salona dekoratif alçıpan asma tavan uygulandı.</p></div><div class="jc rv jx"><div class="jt"><span class="jcat">Dekorasyon</span><span class="jloc">📍 Nilüfer</span></div><h3>Dekoratif Duvar Çıtası</h3><p>Duvar çıtası ile dekoratif duvar uygulaması yapıldı.</p></div><div class="jc rv jx"><div class="jt"><span class="jcat">Yapı</span><span class="jloc">📍 Yıldırım</span></div><h3>Ytong Duvar Örme</h3><p>Ytong bölme duvar, terazisine dikkat edilerek sağlam ve düzgün şekilde örüldü.</p></div><div class="jc rv jx"><div class="jt"><span class="jcat">Yalıtım</span><span class="jloc">📍 Osmangazi</span></div><h3>Bina Mantolama</h3><p>Binanın dış cephesine mantolama ve ısı yalıtımı uygulandı.</p></div><div class="jc rv jx"><div class="jt"><span class="jcat">Tesisat</span><span class="jloc">📍 Yıldırım</span></div><h3>Su Kaçağı Tespiti ve Onarım</h3><p>Su kaçağı kırmadan dökmeden tespit edildi, nokta atışı onarımla giderildi.</p></div><div class="jc rv jx"><div class="jt"><span class="jcat">Mobilya</span><span class="jloc">📍 Nilüfer</span></div><h3>Antre Vestiyer</h3><p>Antreye ölçüye özel vestiyer üretilip monte edildi.</p></div><div class="jc rv jx"><div class="jt"><span class="jcat">Yalıtım</span><span class="jloc">📍 Nilüfer</span></div><h3>Teras İzolasyonu</h3><p>Teras su yalıtımı yenilendi; yağmurda yaşanan akıntı sorunu çözüldü.</p></div><div class="jc rv jx"><div class="jt"><span class="jcat">Komple</span><span class="jloc">📍 Yıldırım</span></div><h3>Komple Daire Tadilatı</h3><p>Eski daire komple elden geçirilerek yeniden yaşanabilir hale getirildi.</p></div><div class="jc rv jx"><div class="jt"><span class="jcat">Kapı</span><span class="jloc">📍 Osmangazi</span></div><h3>İç Kapı Montajı</h3><p>Evin iç kapıları yenilendi, kasa ve kapı montajı temiz şekilde yapıldı.</p></div><div class="jc rv jx"><div class="jt"><span class="jcat">Yapı</span><span class="jloc">📍 Nilüfer</span></div><h3>Duvar Kırma ve PVC Doğrama</h3><p>Duvar kırılarak geçiş genişletildi, PVC doğramalar takıldı.</p></div></div>
+  <div style="text-align:center;margin-top:30px"><button class="btn btn-line" id="jMore" style="color:var(--text);border-color:#cbbf9f" onclick="this.closest('.jobs').classList.add('all');this.remove()">Tüm İşleri Göster (20)</button></div>
+ </div>
+</section>
+
+<section class="rv-sec" id="yorum">
+ <div class="wrap">
+  <div class="head rv">
+   <div class="eyebrow">Müşteri Değerlendirmesi</div>
+   <h2>Bizimle Çalıştınız Mı?</h2>
+   <p>Deneyiminizi paylaşın; görüşleriniz hem bizim hem de karar aşamasındaki komşularınız için çok değerli.</p>
+  </div>
+  <form class="rform rv" id="rForm">
+   <input type="hidden" name="_subject" value="Yeni Müşteri Değerlendirmesi - artyapitasarimdekorasyon.com">
+   <input type="hidden" name="_template" value="table">
+   <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+   <label>Ad Soyad<input name="Ad Soyad" required placeholder="Sitede sadece baş harfleri görünür"></label>
+   <label>Semt<input name="Semt" required placeholder="Örn. Nilüfer"></label>
+   <label>Aldığınız Hizmet<select name="Hizmet" required><option value="">Seçiniz</option><option>Komple Daire / Ev Tadilatı</option><option>Banyo Yenileme</option><option>Mutfak Yenileme</option><option>Boya & Dekorasyon</option><option>Alçıpan & Asma Tavan</option><option>Seramik & Zemin</option><option>Parke</option><option>Yerden Isıtma</option><option>Sıhhi Tesisat & Su Kaçağı</option><option>Mantolama & Yalıtım</option><option>Balkon Kapatma</option><option>Kapı / Pencere</option><option>Özel Mobilya</option><option>Ofis / Ticari Alan</option><option>Diğer</option></select></label>
+   <label>Telefon (isteğe bağlı)<input name="Telefon" type="tel" placeholder="Sitede gösterilmez"></label>
+   <label class="full">Puanınız<div class="stars" id="rStars"><span data-v="1">★</span><span data-v="2">★</span><span data-v="3">★</span><span data-v="4">★</span><span data-v="5">★</span></div><input type="hidden" name="Puan" id="rPuan" value="5"></label>
+   <label class="full">Yorumunuz<textarea name="Yorum" required placeholder="Deneyiminizi birkaç cümleyle anlatın"></textarea></label>
+   <label class="chk full"><input type="checkbox" name="Yayın İzni" value="Evet" required>Yorumumun ad soyadımın baş harfleri ve semtimle birlikte sitede yayınlanmasına izin veriyorum.</label>
+   <button class="btn btn-gold" type="submit">Değerlendirmeyi Gönder</button>
+   <div class="rmsg" id="rMsg">Değerlendirmeniz için teşekkür ederiz! Yorumunuz incelendikten sonra sitemizde yayınlanacaktır.</div>
+  </form>
+ </div>
+</section>
+<script>(function(){const st=[...document.querySelectorAll('#rStars span')],pv=document.getElementById('rPuan');const set=v=>{pv.value=v;st.forEach(x=>x.classList.toggle('on',+x.dataset.v<=v))};st.forEach(x=>x.onclick=()=>set(+x.dataset.v));set(5);
+const f=document.getElementById('rForm'),m=document.getElementById('rMsg');f.onsubmit=async e=>{e.preventDefault();const b=f.querySelector('button');b.disabled=true;b.textContent='Gönderiliyor…';
+try{const r=await fetch('https://formsubmit.co/ajax/melih@artyapitasarimdekorasyon.com',{method:'POST',headers:{'Accept':'application/json'},body:new FormData(f)});if(!r.ok)throw 0;
+[...f.children].forEach(c=>{if(c!==m)c.style.display='none'});m.style.display='block'}catch(_){b.disabled=false;b.textContent='Değerlendirmeyi Gönder';alert('Gönderilemedi, lütfen tekrar deneyin veya WhatsApp ile bize yazın.')}}})();</script>
 
 <section class="ba-sec" id="donusum">
  <div class="wrap">
