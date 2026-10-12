@@ -1,6 +1,6 @@
 /* Art Yapı – ölçüm kodları (Google Analytics 4 + Meta Pixel), çerez onayına bağlı */
 (function(){
-var GA_ID = "";   // Google Analytics 4 ölçüm kimliği (G-XXXXXXX)
+var GA_ID = "G-53E8QK551W";   // Google Analytics 4 ölçüm kimliği (G-XXXXXXX)
 var PIXEL_ID = ""; // Meta Pixel kimliği
 if(!GA_ID && !PIXEL_ID) return;
 var KEY="ay_consent";
